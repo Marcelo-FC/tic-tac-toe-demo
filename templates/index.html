@@ -10,20 +10,22 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/overlays.css">
-    <link rel="stylesheet" href="styles/configuration.css">
-    <link rel="stylesheet" href="styles/game.css">
 
-    <script src="scripts/config.js" defer></script>
-    <script src="scripts/game.js" defer></script>
-    <script src="scripts/app.js" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/overlays.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/configuration.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/game.css') }}">
+
+    <script src="{{ url_for('static', filename='scripts/config.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='scripts/game.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='scripts/app.js') }}" defer></script>
   </head>
   <body>
     <div id="backdrop"></div>
     <header id="main-header">
       <h1>Play Tic Tac Toe</h1>
       <p>A simple browser based tic tac toe demo built with HTML, CSS and Javascript!</p>
+      <p>Powered by flask and docker</p>
     </header>
     <main>
 
