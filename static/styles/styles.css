@@ -7,6 +7,7 @@ body {
 
 #main-header {
     position: relative;
+    z-index: 1;
     background: linear-gradient(to bottom, #6e00c9, #a04de8);
     color: white;
     padding: 2rem 5%;
@@ -22,7 +23,7 @@ body {
     width: 100%;
     height: 0%;
     background: radial-gradient(ellipse at bottom, rgba(255, 255, 255, 0.5), transparent 80%);
-    animation: luminanceWave 10s ease-in-out infinite;
+    animation: luminanceWave 15s ease-in-out infinite;
     pointer-events: none;
   }
   

@@ -1,4 +1,5 @@
 #config-overlay {
+    z-index: 101;
     text-align: center;
 }
 
@@ -75,5 +76,9 @@
     color: rgb(47, 4, 82);
     margin: 0.5rem 0;
 }
+
+#game-configuration button#start-game-btn {
+    margin-top: 2rem;
+  }
 
 
