@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/overlays.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/configuration.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/game.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/tech.css') }}">
 
     <script src="{{ url_for('static', filename='scripts/config.js') }}" defer></script>
     <script src="{{ url_for('static', filename='scripts/game.js') }}" defer></script>
@@ -86,6 +87,41 @@
           <li data-col="3" data-row="3"></li>
         </ol>
       </section>
+      <div class="tech-section">
+        <h2>Technologies Used</h2>
+        <div class="tech-grid">
+          <div class="tech-row">
+          <div class="tech-card">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/html5.svg" alt="HTML">
+            <h4>HTML5</h4>
+            <p>Structure and layout of the entire application.</p>
+          </div>
+          <div class="tech-card">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/css3.svg" alt="CSS">
+            <h4>CSS3</h4>
+            <p>Styling, animation and responsive layout logic.</p>
+          </div>
+          <div class="tech-card">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/javascript.svg" alt="JavaScript">
+            <h4>JavaScript</h4>
+            <p>Game logic, interactions and DOM updates.</p>
+          </div>
+        </div>
+        <div class="tech-row">
+          <div class="tech-card">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/flask.svg" alt="Flask">
+            <h4>Flask</h4>
+            <p>Micro web framework used to serve the app.</p>
+          </div>
+          <div class="tech-card">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/docker.svg" alt="Docker">
+            <h4>Docker</h4>
+            <p>Containerized setup for deployment and portability.</p>
+          </div>
+        </div>
+        </div>
+      </div>
+      
     </main>
   </body>
 </html>
